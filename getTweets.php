@@ -153,7 +153,7 @@ function doCurl($q)
 function storeData($json)
 {
    $microtime = date("Ymdhis");
-   $myFile = "files/tweetsLND12-4sq-".$microtime.".json";
+   $myFile = "files/tweetsLND12-".$microtime.".json";
    $fh = fopen($myFile, 'w') or die("can't open file");
    fwrite($fh, $json);
    fclose($fh);
